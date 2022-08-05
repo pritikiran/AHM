@@ -1,0 +1,15 @@
+COLUMN TABLE "ahm_iot_wm_devices" (
+
+    "id"  NVARCHAR(64) PRIMARY KEY NOT NULL,
+
+    "alternateId" NVARCHAR(64),
+
+    "name" NVARCHAR(64),
+
+    "gatewayId" INTEGER,
+
+    "creationTimestamp" TIMESTAMP,
+
+    "online" BOOLEAN
+
+)

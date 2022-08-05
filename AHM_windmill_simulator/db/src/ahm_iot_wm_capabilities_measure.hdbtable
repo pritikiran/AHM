@@ -1,0 +1,11 @@
+COLUMN TABLE "ahm_iot_wm_capabilities_measure" (
+
+    "capability_id" NVARCHAR(64),
+
+    "capability_property_name" NVARCHAR(64),
+
+    "capability_property_uom" NVARCHAR(64),
+
+    "capability_property_measure_value" NVARCHAR(64)
+
+)

@@ -1,0 +1,9 @@
+COLUMN TABLE "ahm_iot_wm_sensor" (
+
+    "id"  NVARCHAR(64) PRIMARY KEY NOT NULL,
+
+    "alternateId" NVARCHAR(64),
+
+    "sensor_name" NVARCHAR(64)
+
+)

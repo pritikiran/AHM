@@ -1,0 +1,9 @@
+COLUMN TABLE "ahm_iot_wm_capabilities" (
+
+    "id"  NVARCHAR(64) PRIMARY KEY NOT NULL,
+
+    "alternateId" NVARCHAR(64),
+
+    "capability_name" NVARCHAR(64)
+
+)
