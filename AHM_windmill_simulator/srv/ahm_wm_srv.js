@@ -85,11 +85,10 @@ const getCapabilitiesMeasure = async (req, res, next) => {
         result.forEach(async (element) => {
             db.execute_query(`UPSERT "8415F0D2182F4EC0BE4BC862B12B2611"."ahm_iot_wm_capabilities_measure" VALUES ( 
                 '${element.capability_id}' ,
-                '${element.capability_property_name}'
+                '${element.capability_property_name}',
                 '${element.capability_property_uom}',
-                '${element.capability_property_measure_value}'
-                              
-                )  WITH PRIMARY KEY ;`);
+                '${element.capability_property_measure_value}'                
+                ) ;`);
 
 
 
@@ -106,6 +105,6 @@ module.exports = cds.service.impl(function () {
     this.before('READ', 'ahm_device', each => { getDevice() })
     this.before('READ', 'ahm_sensor', each => { getSensors() })
     this.before('READ', 'ahm_capabilitiy', each => { getCapabilities() })
-    this.before('READ', 'ahm_capabilitiy_measure', each => { getCapabilitiesMeasure() })
+    this.before('READ', 'ahm_capability_measure', each => { getCapabilitiesMeasure() })
 
 })

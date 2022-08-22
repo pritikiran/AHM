@@ -70,8 +70,7 @@ iot.getIOTCapabilities = async () => {
         device_Array.push({
             id: element.id,
             alternateId: element.alternateId,
-            name:element.name,
-            properties:element.properties
+            name:element.name
                                
         })
  
@@ -105,32 +104,7 @@ iot.getIOTCapabilitiesMeasure = async () => {
         })
     })    
 
-    // let result = await getIOT_Capabilities_Sensors();
-
-    // result.forEach(element => {
-    //     device_Prop = [];
-    
-    //     result.properties.forEach(element1 => {
-    //         device_Prop.push(
-
-    //        {
-    //             name: element1.name,
-    //             dataType:element1.dataType,
-    //             unitOfMeasure:element1.unitOfMeasure               
-    //         }) 
-
-    //     })
-
-    //     device_Array.push({
-    //         id: element.id,
-    //         properties:device_Prop
-        
-                          
-                               
-    //     })
- 
-
-    // });
+   
 
     return device_Array;
 

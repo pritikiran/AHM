@@ -10,7 +10,7 @@ service ahm_windmill {
 
     entity ahm_capabilitiy as projection on windmill.CAPABILITIES;
 
-    entity ahm_capabilitiy_measure as projection on windmill.CAPABILITIES_MEASURE;    
+    entity ahm_capability_measure as projection on windmill.CAPABILITIES_MEASURE;    
 
 
 
